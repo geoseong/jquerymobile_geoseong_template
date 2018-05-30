@@ -1,0 +1,21 @@
+/** 반응형 css **/
+@media screen and (min-width: 320px) and (max-width: 350px) {
+    /* input */
+}
+@media screen and (max-width: 500px) {
+    /* input */
+}
+@media screen and (min-width: 500px) {
+    /* input */
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    /* input */
+}
+@media screen and (min-width: 900px) {
+    /* input */
+}
+
+/** 공통 **/
+a, p, th, td, span, #main-logout, .ui-overlay-b, .ui-page-theme-b, .ui-page-theme-b .ui-panel-wrapper { 
+    text-shadow: none;
+}

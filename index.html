@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQueryMobile geoseong custom Template</title>
+    <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/jquery.mobile-1.4.5.min.css" />
+    <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+    <script src="libs/jquery-1.11.1.min.js"></script>
+    <script src="libs/jquery.mobile-1.4.5.min.js"></script>
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    <!-- CryptoJS v3.1.2 -->
+    <script src="libs/CryptoJSv3.1.2/rollups/aes.js"></script>
+    <script src="libs/CryptoJSv3.1.2/components/aes.js"></script>
+    <script src="libs/CryptoJSv3.1.2/rollups/sha256.js"></script>
+    <script src="libs/CryptoJSv3.1.2/components/sha256.js"></script>
+</head>
+<body>
+    <!-- 개인정보 동의 페이지 -->
+    <div data-role="page" id="firstpage">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <div class="proj-header">Header 001</div>
+        </div><!-- /header -->
+        <div role="main" class="ui-content">
+            <!-- 내용 -->
+            <p>Content</p>
+
+            <!-- 팝업호출 버튼. -->
+            <a href="#apply-check-false"
+                id="auth-btn"
+                class=" proj-clocking"
+                data-rel="popup"
+                data-transition="pop"
+                data-position-to="window">팝업</a>
+            <!-- popup -->
+            <div data-role="popup" id="apply-check-false" data-dismissible="false">
+                <div role="main" class="ui-content">
+                    <h5 class="proj-popup-msg">개인 정보 이용 약관에 모두 동의 하셔야 합니다.</h5>
+                    <div class="mc-text-center">
+                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a mc-top-margin-1-5">확인</a>
+                    </div>
+                </div>
+            </div><!-- /popup -->
+
+            <!-- 페이지 이동 버튼 -->
+            <a href="#secondpage">다음페이지</a>
+
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="proj-footer">Footer</div>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <!-- 두번째 페이지 -->
+    <div data-role="page" id="secondpage">
+        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+            <div class="proj-header">Header 002</div>
+        </div><!-- /header --> 
+        <div role="main" class="ui-content">
+            <!-- 내용 -->
+            <p>Content</p>
+
+            <!-- 팝업호출 버튼. -->
+            <a href="#check-auth-page-001"
+                id="auth-btn"
+                class=" proj-clocking"
+                data-rel="popup"
+                data-transition="pop"
+                data-position-to="window">다음</a>
+            <!-- popup -->
+            <div data-role="popup" id="check-auth-page-001" data-dismissible="false">
+                <div role="main" class="ui-content">
+                    <h5 class="proj-popup-msg">-</h5>
+                    <div class="mc-text-center">
+                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a mc-top-margin-1-5">확인</a>
+                    </div>
+                </div>
+            </div><!-- /popup -->
+            
+            <!-- 페이지 이동 버튼 -->
+            <a href="#firstpage">이전페이지</a>
+
+        </div><!-- /content -->
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+            <div class="proj-footer">Footer</div>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
